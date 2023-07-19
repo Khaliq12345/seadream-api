@@ -1,4 +1,3 @@
-from voyage_scraper import main
 import json
 from fastapi import FastAPI
 from dropbox import Dropbox

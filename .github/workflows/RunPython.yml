@@ -1,7 +1,0 @@
-name: Run Python Script
-
-on:
-  workflow_dispatch:
-
-env:
-  dropbox_token: ${{ secrets.DROPBOX }}

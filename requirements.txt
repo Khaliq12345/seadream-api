@@ -1,0 +1,5 @@
+fastapi
+cloudscraper
+beautifulsoup4
+pandas
+cleantext

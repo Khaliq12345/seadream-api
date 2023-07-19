@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get('/')
 async def scrape():
-    #main()
+    main()
     # Opening JSON file
     with open('voyages.json') as json_file:
         data = json.load(json_file)

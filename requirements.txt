@@ -1,9 +1,0 @@
-fastapi
-cloudscraper
-beautifulsoup4
-pandas
-cleantext
-lxml
-uvicorn
-gunicorn
-dropbox

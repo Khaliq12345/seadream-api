@@ -5,8 +5,8 @@ import config
 
 
 def download_file(file):
-    token = config.key
-    dbx = Dropbox(token)
+    dbx = Dropbox(oauth2_refresh_token=config.refresh_token,
+              app_key=config.app_key, app_secret=config.app_secret)
     # read a file
     with open(file, 'wb') as f:
         metadata, result = dbx.files_download(path='/Voyage/voyages.json')

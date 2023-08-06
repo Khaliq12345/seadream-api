@@ -9,15 +9,15 @@ def download_file(file):
               app_key=config.app_key, app_secret=config.app_secret)
     # read a file
     with open(file, 'wb') as f:
-        metadata, result = dbx.files_download(path='/Voyage/voyages.json')
+        metadata, result = dbx.files_download(path='/Voyage/seaDream_voyages.json')
         f.write(result.content)
 
 app = FastAPI()
 
 @app.get('/')
 async def scrape():
-    download_file('voyages.json')
+    download_file('seaDream_voyages.json')
     # Opening JSON file
-    with open('voyages.json') as json_file:
+    with open('seaDream_voyages.json') as json_file:
         data = json.load(json_file)
     return data

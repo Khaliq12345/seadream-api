@@ -5,3 +5,4 @@ pandas
 cleantext
 dropbox
 uvicorn
+algoliasearch
